@@ -14,11 +14,11 @@ You have a raw <a href="https://en.wikipedia.org/wiki/HTTP_cookie" target="_blan
 <div class="for_info_only">
     <p><strong>Example:</strong></p>
 <pre class="brush: python">{% if interpreter.slug == "js-node" %}
-get_cookie('theme=light; sessionToken=abc123', 'theme') == 'light'
-get_cookie('_ga=GA1.2.447610749.1465220820; _gat=1; ffo=true', 'ffo') == 'true'
-{% else %}
 getCookie('theme=light; sessionToken=abc123', 'theme') == 'light'
 getCookie('_ga=GA1.2.447610749.1465220820; _gat=1; ffo=true', 'ffo') == 'true'
+{% else %}
+get_cookie('theme=light; sessionToken=abc123', 'theme') == 'light'
+get_cookie('_ga=GA1.2.447610749.1465220820; _gat=1; ffo=true', 'ffo') == 'true'
 {% endif %}</pre>
 </div>
 <br />
