@@ -22,5 +22,19 @@ TESTS = {
             "answer": "true"
         },
         
+    ],
+    "Extra": [
+        {
+            "input": ["domain=checkio.org; theme=dark", "domain"],
+            "answer": "checkio.org"
+        },
+        {
+            "input": ["ffo=false; domain=google.com; expires=Sunday, 20-May-2018 00:00:00 GMT", "expires"],
+            "answer": "Sunday, 20-May-2018 00:00:00 GMT"
+        },
+	    {
+            "input": ["USER=Mr.Smith; path=/home", "USER"],
+            "answer": 'Mr.Smith'
+        }
     ]
 }
