@@ -20,7 +20,7 @@ TESTS = {
               "_ga=GA1.2.447610749.1465220820; _gat=1; ffo=true", "ffo"
             ],
             "answer": "true"
-        },
+        }
         
     ],
     "Extra": [
@@ -32,9 +32,13 @@ TESTS = {
             "input": ["ffo=false; domain=google.com; expires=Sunday, 20-May-2018 00:00:00 GMT", "expires"],
             "answer": "Sunday, 20-May-2018 00:00:00 GMT"
         },
-	    {
-            "input": ["USER=Mr.Smith; path=/home", "USER"],
-            "answer": 'Mr.Smith'
+	{
+            "input": ["USER=Mr.Smith; path=/home", "path"],
+            "answer": '/home'
+        },
+	{
+            "input": ["USER=name=Unknown; domain=bbc.com", "USER"],
+            "answer": 'name=Unknown'
         }
     ]
 }
